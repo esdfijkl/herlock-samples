@@ -24,8 +24,9 @@ Enterframeによるアニメーションサンプル
 requirejsの使用サンプル
 
 
-requirejsは下記のものをベースに改変したものを使用しています  
-[http://requirejs.org/](http://requirejs.org/)
+requirejsは改変したものを使用しています  
+
+original:[http://requirejs.org/](http://requirejs.org/)
 
 
 ## text
@@ -44,7 +45,6 @@ Herlockによるゲームの作成サンプルです。
 [GooglePlay](https://play.google.com/store/apps/details?id=com.sonicmoov.nekoana)  
 [AppStore](https://itunes.apple.com/app/id649339218?l=ja&ls=1&mt=8)
 
-※AppStoreは現在申請中
 
 ___
 
