@@ -1,19 +1,5 @@
 (function(){
 
-/*
-var image = new Image();
-image.src = "http://dummyimage.com/300/09f/fff.png";
-image.onload = function() {
-    var layer = new Layer( image );
-    layer.scaleMode = "showAll"// Layer.SCALE_SHOW_ALL ;
-    //layer.scaleMode = "noBorder";// Layer.SCALE_NO_BORDER ;
-    //layer.scaleMode = "noScale";// Layer.SCALE_NO_SCALE ;
-    //layer.scaleMode = "exactFit";// Layer.SCALE_EXACT_FIT ;
-    window.addLayer( layer );
-}
-return;
-*/
-
 // header 上に吸着
 var headerLayer = new Layer( new Stage( 640, 80 ) );
 headerLayer.verticalAlign = "top";
@@ -52,7 +38,7 @@ headerLayer.content.addChild( header );
 
 // 
 var image = new Image();
-image.src = "http://dummyimage.com/300/09f/fff.png";
+image.src = "assets/images.png";
 image.onload = function() {
 	contentLayer.verticalAlign = "middle";
 	contentLayer.scaleMode = "noBorder";
@@ -72,7 +58,20 @@ footer.alpha = 0.7;
 footerLayer.content.addChild( footer );
 
 
-
+/*
+別の例
+var image = new Image();
+image.src = "http://dummyimage.com/300/09f/fff.png";
+image.onload = function() {
+    var layer = new Layer( image );
+    layer.scaleMode = "showAll"// Layer.SCALE_SHOW_ALL ;
+    //layer.scaleMode = "noBorder";// Layer.SCALE_NO_BORDER ;
+    //layer.scaleMode = "noScale";// Layer.SCALE_NO_SCALE ;
+    //layer.scaleMode = "exactFit";// Layer.SCALE_EXACT_FIT ;
+    window.addLayer( layer );
+}
+return;
+*/
 
 })();
 
