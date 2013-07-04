@@ -4,7 +4,7 @@ var stage = new Stage( 640, 640 );
 addLayer( new Layer( stage ) );
 
 var image = new Image();
-image.src = "assets/images.png";
+image.src = "assets/images/image.png";
 
 image.onload = function() {
 

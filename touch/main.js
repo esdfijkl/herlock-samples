@@ -10,7 +10,7 @@ var image = new Image();
 
 //Imageオブジェクトに画像のソースURLを設定します
 //このあたりはhtmlのimageと同じような概念となります
-image.src = "assets/images.png";
+image.src = "assets/images/image.png";
 
 //画像リソースは読み込みが完了しないと扱えないので
 //onloadで画像の読み込み完了を待ちます

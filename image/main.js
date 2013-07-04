@@ -4,7 +4,7 @@
 var image = new Image();
 
 //Imageオブジェクトに画像のソースURLを設定します
-image.src = "assets/images.png";
+image.src = "assets/images/image.png";
 
 //読み込み完了時にimageを引数にレイヤーを作成し、windowにアタッチします
 image.onload = function() {

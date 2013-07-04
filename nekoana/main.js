@@ -1,5 +1,5 @@
 
-var BASE_URL = "file://asset";
+var BASE_URL = ".";
 
 ( function( ) {
     "use strict";

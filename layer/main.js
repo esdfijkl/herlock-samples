@@ -38,7 +38,7 @@ headerLayer.content.addChild( header );
 
 // 
 var image = new Image();
-image.src = "assets/images.png";
+image.src = "assets/images/image.png";
 image.onload = function() {
 	contentLayer.verticalAlign = "middle";
 	contentLayer.scaleMode = "noBorder";
