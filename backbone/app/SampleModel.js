@@ -11,7 +11,7 @@ define(
         //　今回はJSONで通信をして値を更新する想定にします
 
         var SampleModel = Backbone.Model.extend({
-            urlRoot: 'http://ide.alpha.herlock.do/workspace/seikai/BackboneSample/',
+            urlRoot: 'https://raw.github.com/herlock/samples/master/backbone/',
             url: function() {
                 return this.urlRoot + 'sample.json';
             },

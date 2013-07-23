@@ -1,6 +1,9 @@
 ( function( ) {
     "use strict";
 
+    //送信先のURLです（任意の場所に変更して下さい）
+    var URL = "http://samplehost/sample.json";
+
     //XMLHttpRequestオブジェクトを生成
     var httpGet = new XMLHttpRequest();
 
@@ -23,7 +26,7 @@
 
     //通信を開きます
     //第一引数はHTTPメソッド、第二引数がURLです
-    httpGet.open("GET", "sample.json");
+    httpGet.open("GET", URL);
 
     //リクエストを送信します
     httpGet.send(null);
@@ -52,8 +55,8 @@
 
     //通信を開きます
     //第一引数はHTTPメソッド、第二引数がURLです
-    httpPost.open("POST", "sample.json");
-
+    httpPost.open("POST", URL);
+    
     //リクエストを送信します
     httpPost.send(postBody);
 

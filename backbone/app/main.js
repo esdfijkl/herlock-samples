@@ -40,7 +40,7 @@ define(
             // 要素の型指定
             model : SampleModel,
             // 取得先のURL
-            url : 'http://ide.alpha.herlock.do/workspace/seikai/BackboneSample/sample2.json',
+            url : 'https://raw.github.com/herlock/samples/master/backbone/sample2.json',
             parse : function(response) {
                 //リストを返却する部分を返す
                 return response;
