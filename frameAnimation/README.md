@@ -1,0 +1,6 @@
+# FrameAnimationSample
+
+SpriteSheetによるコマアニメのサンプルです
+
+SpriteSheetによるコマアニメはBitmap.setClippingRectによって生成します。
+

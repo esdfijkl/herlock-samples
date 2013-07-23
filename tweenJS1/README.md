@@ -1,0 +1,3 @@
+# TweenJSSample 1
+
+オーソドックスなTweenJSを使用したTweenアニメーションのサンプルです
