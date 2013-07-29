@@ -1,5 +1,5 @@
 /**
- * app.hello.Worldオブジェクトを定義します
+ * hello.Worldオブジェクトを定義します
  */
 define(
     [
@@ -11,18 +11,18 @@ define(
          * @exports
          * @constructor
          */
-        app.hello.World = function() {
+        hello.World = function() {
             this._initialize.apply(this, arguments);
         };
 
-        (/** @this app.hello.World.prototype */function(){
+        (/** @this hello.World.prototype */function(){
 
             /**
              * @protected
              */
             this._initialize = function() {
 
-                console.log("class:app.hello.World");
+                console.log("class:hello.World");
 
                 /** @type {String} */
                 this.name = "World!";
@@ -36,14 +36,14 @@ define(
             };
 
             /**
-             * app.hello.World.say
+             * hello.World.say
              */
             this.say = function() {
 
                 console.log("Hello," + this.getName());
             };
 
-        }).call(app.hello.World.prototype);
+        }).call(hello.World.prototype);
 
     }
 );

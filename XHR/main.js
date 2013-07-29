@@ -1,9 +1,30 @@
+//ログ出力用にテキストフィールドを表示します
+//stageを用意します
+var stage = new Stage( 320, 320 );
+addLayer( new Layer( stage ) );
+
+//背景を敷き詰めます
+var bg = stage.addChild( new Bitmap( new BitmapData( 1, 1, true, 0xffffffff) ) );
+bg.width = stage.stageWidth;
+bg.height = stage.stageHeight;
+
+//テキストフィールドを表示します
+var logField = new TextField();
+logField.text = "log:";
+logField.multiline = true;
+logField.height = 320;
+logField.width = 320;
+
+stage.addChild( logField );
+
 ( function( ) {
     "use strict";
-
-    //送信先のURLです（任意の場所に変更して下さい）
-    var URL = "http://samplehost/sample.json";
-
+    
+    //※urlは任意のものに変更して下さい。
+    //※尚herlockのwebideのworkspace上のファイルは
+    // POSTによる通信を許可していないので注意してください
+    var URL = "./sample.json";
+    
     //XMLHttpRequestオブジェクトを生成
     var httpGet = new XMLHttpRequest();
 
@@ -17,10 +38,14 @@
         //・3：操作可能状態
         //・4：全データ読込完了状態
         if(httpGet.readyState === 4) {
-
-
-            console.log(httpGet.responseText);
-
+            
+            //statusは現在実装面調整中の為0しか返さないので
+            //ここで判定していません
+            
+            logField.appendText("get result=============\n");
+            logField.appendText(httpGet.responseText);
+            logField.appendText("\n");
+            
         }
     };
 
@@ -46,17 +71,21 @@
         //・3：操作可能状態
         //・4：全データ読込完了状態
         if(httpPost.readyState === 4) {
-
-
-            console.log(httpPost.responseText);
-
+            
+            //statusは現在実装面調整中の為0しか返さないので
+            //ここで判定していません
+            
+            logField.appendText("post result============\n");
+            logField.appendText(httpPost.responseText);
+            logField.appendText("\n");
+            
         }
     };
 
     //通信を開きます
     //第一引数はHTTPメソッド、第二引数がURLです
     httpPost.open("POST", URL);
-    
+
     //リクエストを送信します
     httpPost.send(postBody);
 

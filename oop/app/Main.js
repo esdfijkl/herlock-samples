@@ -11,8 +11,8 @@ define(
         //インスタンスを生成して
         //sayメソッドを呼び出します
 
-        /** @type {app.hello.Hoge} */
-        var hoge = new app.hello.Hoge();
+        /** @type {hello.Hoge} */
+        var hoge = new hello.Hoge();
 
         hoge.say();
     }
