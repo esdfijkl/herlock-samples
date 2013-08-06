@@ -1,0 +1,7 @@
+# AnimationControl
+
+SpriteSheetとTweenの合わせ技でアニメーションを制御します
+
+※ TweenはTweenJSを使用します
+※ SpriteSheetに関しての詳細はFrameAnimationSampleをご覧下さい
+

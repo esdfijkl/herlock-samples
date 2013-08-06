@@ -2,7 +2,7 @@
 ( function( ) {
     "use strict";
 
-    var loader = new Script( "tween.js" );
+    var loader = new Script( "tweenjs.js" );
     var image = new Image();
     var stage = new Stage( 320, 480 );
     addLayer( new Layer( stage ) );
