@@ -10,7 +10,6 @@ image.src = "assets/images/image.png";
 var stage = new Stage( 640, 640 );
 addLayer( new Layer( stage ) );
 
-var image = new Image( "assets/images.png" );
 image.onload = function() {
     var bd = new BitmapData( image );
     var bitmap = new Bitmap( bd );
