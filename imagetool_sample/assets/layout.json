@@ -1,0 +1,107 @@
+{
+	"hlk_1863991900":{
+	    "items": [{
+	            "type": "img",
+	            "id": "hlk_726257124",
+	            "param": {
+	                "verticalAlign": 0,
+	                "horizontalAlign": 0,
+	                "src": "",
+	                "x": "0",
+	                "y": "0",
+	                "rotation": 0,
+	                "width": "320",
+	                "height": "568",
+	                "alpha": 1,
+	                "visible": true,
+	                "clipRect": null,
+	                "isWrap": true
+	            },
+	            "dataset": {
+	                "naturalWidth": "640",
+	                "naturalHeight": "1136",
+	                "type": "img",
+	                "group": "layoutItem"
+	            },
+	            "src": "assets/images/background.png"
+	        }, {
+	            "type": "img",
+	            "id": "cat1",
+	            "param": {
+	                "verticalAlign": 0,
+	                "horizontalAlign": 0,
+	                "src": "",
+	                "x": 123,
+	                "y": 210,
+	                "rotation": 0,
+	                "width": 99,
+	                "height": 144,
+	                "alpha": 1,
+	                "visible": true,
+	                "clipRect": null,
+	                "isWrap": true
+	            },
+	            "dataset": {
+	                "naturalWidth": "132",
+	                "naturalHeight": "175",
+	                "type": "img",
+	                "group": "layoutItem"
+	            },
+	            "src": "assets/images/cat1.png"
+	        }, {
+	            "type": "img",
+	            "id": "hlk_1822243450",
+	            "param": {
+	                "verticalAlign": 0,
+	                "horizontalAlign": 0,
+	                "src": "",
+	                "x": 116,
+	                "y": 368,
+	                "rotation": 0,
+	                "width": "85",
+	                "height": 75,
+	                "alpha": 1,
+	                "visible": true,
+	                "clipRect": {
+	                    "x": 0,
+	                    "y": 0,
+	                    "width": "85",
+	                    "height": 75
+	                },
+	                "isWrap": true
+	            },
+	            "dataset": {
+	                "naturalWidth": "85",
+	                "naturalHeight": "240",
+	                "type": "img",
+	                "group": "layoutItem"
+	            },
+	            "src": "assets/images/ossan.png"
+	        }, {
+	            "type": "img",
+	            "id": "hlk_1822243454",
+	            "param": {
+	                "verticalAlign": "1",
+	                "horizontalAlign": "1",
+	                "src": "",
+	                "x": 62,
+	                "y": 412,
+	                "rotation": "294",
+	                "width": "66",
+	                "height": "57",
+	                "alpha": 1,
+	                "visible": true,
+	                "clipRect": null,
+	                "isWrap": true
+	            },
+	            "dataset": {
+	                "naturalWidth": "66",
+	                "naturalHeight": "57",
+	                "type": "img",
+	                "group": "layoutItem"
+	            },
+	            "src": "assets/images/cat_spin.png"
+	        }
+	    ]
+	}
+}
