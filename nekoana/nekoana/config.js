@@ -1,11 +1,11 @@
 define( "nekoana/config", [], function() {
     
     //Base Url
-    var Url = "file://asset/nekoana/";
+    var Url = "./nekoana/";
     
     //Androidの制限があるので
     //音声ファイルは一時ファイルディレクトリを使う
-	var SoundBaseUrl = "file://cache/nekoana/";
+	var SoundBaseUrl = "./nekoana/";
 	
     //シーン名
     var SCENE = {
@@ -13,7 +13,7 @@ define( "nekoana/config", [], function() {
         GAME: "game",
         RESULT: "result"
     };
-
+	
     //画像リソースの定義
     var IMG = {
         GROUND: "ground",

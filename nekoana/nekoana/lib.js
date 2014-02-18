@@ -366,6 +366,8 @@ define( "nekoana/lib", ["nekoana/config", "libs/common"], function( config ) {
         this.loadScene( name );
     };
     
+	Game.prototype.layer = null;
+	
     /**
      * 画面を呼び出す
      * @param name
@@ -375,16 +377,17 @@ define( "nekoana/lib", ["nekoana/config", "libs/common"], function( config ) {
         if ( typeof this.scenes[name] === "undefined" ) {
             throw new Error( "no scene:" + name );
         }
+		
         //Layerが無ければ初期化
-        if(!window.getLayerAt( 0 )) {
+        if(!this.layer) {
             var stage = new Stage( this.width, this.height );
-            var layer = new Layer( stage );
-            layer.scaleMode = "noBorder";
-            window.addLayer( layer );
+            this.layer = new Layer( stage );
+            this.layer.scaleMode = "noBorder";
+            window.addLayer( this.layer );
             this.stage = stage;
             Util.mixin( this.stage, DisplayContainerMixin );
         }
-
+		
         //this.dispatchEvent( new Event( Game.SCENE_UNLOAD ) );
         
         if ( !this.isOverlay ) {
